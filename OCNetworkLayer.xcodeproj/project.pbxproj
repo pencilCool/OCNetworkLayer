@@ -15,6 +15,22 @@
 		ECA1738E1ECDAE810083545B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA1738C1ECDAE810083545B /* LaunchScreen.storyboard */; };
 		ECA173991ECDAE810083545B /* OCNetworkLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA173981ECDAE810083545B /* OCNetworkLayerTests.m */; };
 		ECA173A41ECDAE810083545B /* OCNetworkLayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA173A31ECDAE810083545B /* OCNetworkLayerUITests.m */; };
+		ECA173B31ECDAEA60083545B /* BackendConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA173B21ECDAEA60083545B /* BackendConfiguration.m */; };
+		ECA173B61ECDB0440083545B /* BackendAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA173B51ECDB0440083545B /* BackendAPIRequest.m */; };
+		ECA173BA1ECDB38A0083545B /* SignInRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA173B91ECDB38A0083545B /* SignInRequest.m */; };
+		ECA173BF1ECE88A60083545B /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA173BE1ECE88A60083545B /* NetworkService.m */; };
+		ECA173D61ECEA0D70083545B /* SignUpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA173D51ECEA0D70083545B /* SignUpRequest.m */; };
+		ECA173D91ECEA1FF0083545B /* UserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA173D81ECEA1FF0083545B /* UserItem.m */; };
+		ECA94D8A1ECF0236008E9962 /* SignInOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA94D891ECF0236008E9962 /* SignInOperation.m */; };
+		ECA94D8E1ECF0778008E9962 /* NetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA94D8D1ECF0778008E9962 /* NetworkQueue.m */; };
+		ECA94D911ECF1096008E9962 /* SignInResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA94D901ECF1096008E9962 /* SignInResponseMapper.m */; };
+		ECA94D951ECF10D6008E9962 /* ResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA94D941ECF10D6008E9962 /* ResponseMapper.m */; };
+		ECB089261ED065E100A7D93C /* SignInItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB089251ED065E100A7D93C /* SignInItem.m */; };
+		ECB089291ED06CAE00A7D93C /* ArrayResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB089281ED06CAE00A7D93C /* ArrayResponseMapper.m */; };
+		ECF4582D1ECEDEF300FEF934 /* BackendService.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF4582C1ECEDEF300FEF934 /* BackendService.m */; };
+		ECF458431ECEF22600FEF934 /* BackendAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF458421ECEF22500FEF934 /* BackendAuth.m */; };
+		ECF458461ECEF4FE00FEF934 /* NetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF458451ECEF4FE00FEF934 /* NetworkOperation.m */; };
+		ECF458491ECEFE9900FEF934 /* ServiceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF458481ECEFE9900FEF934 /* ServiceOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +67,39 @@
 		ECA1739F1ECDAE810083545B /* OCNetworkLayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCNetworkLayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA173A31ECDAE810083545B /* OCNetworkLayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCNetworkLayerUITests.m; sourceTree = "<group>"; };
 		ECA173A51ECDAE810083545B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA173B11ECDAEA60083545B /* BackendConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackendConfiguration.h; sourceTree = "<group>"; };
+		ECA173B21ECDAEA60083545B /* BackendConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackendConfiguration.m; sourceTree = "<group>"; };
+		ECA173B41ECDB0440083545B /* BackendAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackendAPIRequest.h; sourceTree = "<group>"; };
+		ECA173B51ECDB0440083545B /* BackendAPIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackendAPIRequest.m; sourceTree = "<group>"; };
+		ECA173B81ECDB38A0083545B /* SignInRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInRequest.h; sourceTree = "<group>"; };
+		ECA173B91ECDB38A0083545B /* SignInRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInRequest.m; sourceTree = "<group>"; };
+		ECA173BD1ECE88A60083545B /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		ECA173BE1ECE88A60083545B /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		ECA173D41ECEA0D70083545B /* SignUpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpRequest.h; sourceTree = "<group>"; };
+		ECA173D51ECEA0D70083545B /* SignUpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpRequest.m; sourceTree = "<group>"; };
+		ECA173D71ECEA1FF0083545B /* UserItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserItem.h; sourceTree = "<group>"; };
+		ECA173D81ECEA1FF0083545B /* UserItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserItem.m; sourceTree = "<group>"; };
+		ECA173DB1ECEA2460083545B /* ParsedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsedItem.h; sourceTree = "<group>"; };
+		ECA94D881ECF0236008E9962 /* SignInOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInOperation.h; sourceTree = "<group>"; };
+		ECA94D891ECF0236008E9962 /* SignInOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInOperation.m; sourceTree = "<group>"; };
+		ECA94D8C1ECF0778008E9962 /* NetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkQueue.h; sourceTree = "<group>"; };
+		ECA94D8D1ECF0778008E9962 /* NetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkQueue.m; sourceTree = "<group>"; };
+		ECA94D8F1ECF1096008E9962 /* SignInResponseMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInResponseMapper.h; sourceTree = "<group>"; };
+		ECA94D901ECF1096008E9962 /* SignInResponseMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInResponseMapper.m; sourceTree = "<group>"; };
+		ECA94D931ECF10D6008E9962 /* ResponseMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseMapper.h; sourceTree = "<group>"; };
+		ECA94D941ECF10D6008E9962 /* ResponseMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseMapper.m; sourceTree = "<group>"; };
+		ECB089241ED065E100A7D93C /* SignInItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInItem.h; sourceTree = "<group>"; };
+		ECB089251ED065E100A7D93C /* SignInItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInItem.m; sourceTree = "<group>"; };
+		ECB089271ED06CAE00A7D93C /* ArrayResponseMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayResponseMapper.h; sourceTree = "<group>"; };
+		ECB089281ED06CAE00A7D93C /* ArrayResponseMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayResponseMapper.m; sourceTree = "<group>"; };
+		ECF4582B1ECEDEF300FEF934 /* BackendService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackendService.h; sourceTree = "<group>"; };
+		ECF4582C1ECEDEF300FEF934 /* BackendService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackendService.m; sourceTree = "<group>"; };
+		ECF458411ECEF22500FEF934 /* BackendAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackendAuth.h; sourceTree = "<group>"; };
+		ECF458421ECEF22500FEF934 /* BackendAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackendAuth.m; sourceTree = "<group>"; };
+		ECF458441ECEF4FE00FEF934 /* NetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkOperation.h; sourceTree = "<group>"; };
+		ECF458451ECEF4FE00FEF934 /* NetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkOperation.m; sourceTree = "<group>"; };
+		ECF458471ECEFE9900FEF934 /* ServiceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceOperation.h; sourceTree = "<group>"; };
+		ECF458481ECEFE9900FEF934 /* ServiceOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +150,7 @@
 		ECA1737D1ECDAE810083545B /* OCNetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				ECA173BC1ECDB3B20083545B /* Network */,
 				ECA173811ECDAE810083545B /* AppDelegate.h */,
 				ECA173821ECDAE810083545B /* AppDelegate.m */,
 				ECA173841ECDAE810083545B /* ViewController.h */,
@@ -138,6 +188,102 @@
 				ECA173A51ECDAE810083545B /* Info.plist */,
 			);
 			path = OCNetworkLayerUITests;
+			sourceTree = "<group>";
+		};
+		ECA173B71ECDB3470083545B /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				ECA173B11ECDAEA60083545B /* BackendConfiguration.h */,
+				ECA173B21ECDAEA60083545B /* BackendConfiguration.m */,
+				ECA173B41ECDB0440083545B /* BackendAPIRequest.h */,
+				ECA173B51ECDB0440083545B /* BackendAPIRequest.m */,
+				ECF4582B1ECEDEF300FEF934 /* BackendService.h */,
+				ECF4582C1ECEDEF300FEF934 /* BackendService.m */,
+				ECF458411ECEF22500FEF934 /* BackendAuth.h */,
+				ECF458421ECEF22500FEF934 /* BackendAuth.m */,
+				ECF458471ECEFE9900FEF934 /* ServiceOperation.h */,
+				ECF458481ECEFE9900FEF934 /* ServiceOperation.m */,
+			);
+			name = Backend;
+			sourceTree = "<group>";
+		};
+		ECA173BB1ECDB3960083545B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				ECA173B81ECDB38A0083545B /* SignInRequest.h */,
+				ECA173B91ECDB38A0083545B /* SignInRequest.m */,
+				ECA173D41ECEA0D70083545B /* SignUpRequest.h */,
+				ECA173D51ECEA0D70083545B /* SignUpRequest.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		ECA173BC1ECDB3B20083545B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ECA94D8B1ECF0243008E9962 /* Operations */,
+				ECA173DA1ECEA20E0083545B /* Items */,
+				ECA173B71ECDB3470083545B /* Backend */,
+				ECA173BB1ECDB3960083545B /* Request */,
+				ECA173C01ECE88AB0083545B /* Core Network */,
+				ECA94D961ECF10DA008E9962 /* Core Mapping */,
+				ECA94D921ECF109B008E9962 /* Mappers */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		ECA173C01ECE88AB0083545B /* Core Network */ = {
+			isa = PBXGroup;
+			children = (
+				ECA94D8C1ECF0778008E9962 /* NetworkQueue.h */,
+				ECA94D8D1ECF0778008E9962 /* NetworkQueue.m */,
+				ECF458441ECEF4FE00FEF934 /* NetworkOperation.h */,
+				ECF458451ECEF4FE00FEF934 /* NetworkOperation.m */,
+				ECA173BD1ECE88A60083545B /* NetworkService.h */,
+				ECA173BE1ECE88A60083545B /* NetworkService.m */,
+			);
+			name = "Core Network";
+			sourceTree = "<group>";
+		};
+		ECA173DA1ECEA20E0083545B /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				ECA173DB1ECEA2460083545B /* ParsedItem.h */,
+				ECA173D71ECEA1FF0083545B /* UserItem.h */,
+				ECA173D81ECEA1FF0083545B /* UserItem.m */,
+				ECB089241ED065E100A7D93C /* SignInItem.h */,
+				ECB089251ED065E100A7D93C /* SignInItem.m */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+		ECA94D8B1ECF0243008E9962 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				ECA94D881ECF0236008E9962 /* SignInOperation.h */,
+				ECA94D891ECF0236008E9962 /* SignInOperation.m */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		ECA94D921ECF109B008E9962 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				ECA94D8F1ECF1096008E9962 /* SignInResponseMapper.h */,
+				ECA94D901ECF1096008E9962 /* SignInResponseMapper.m */,
+			);
+			name = Mappers;
+			sourceTree = "<group>";
+		};
+		ECA94D961ECF10DA008E9962 /* Core Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				ECA94D931ECF10D6008E9962 /* ResponseMapper.h */,
+				ECA94D941ECF10D6008E9962 /* ResponseMapper.m */,
+				ECB089271ED06CAE00A7D93C /* ArrayResponseMapper.h */,
+				ECB089281ED06CAE00A7D93C /* ArrayResponseMapper.m */,
+			);
+			name = "Core Mapping";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +422,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA173B61ECDB0440083545B /* BackendAPIRequest.m in Sources */,
+				ECA94D8A1ECF0236008E9962 /* SignInOperation.m in Sources */,
+				ECA173D61ECEA0D70083545B /* SignUpRequest.m in Sources */,
+				ECA173BA1ECDB38A0083545B /* SignInRequest.m in Sources */,
 				ECA173861ECDAE810083545B /* ViewController.m in Sources */,
+				ECF458461ECEF4FE00FEF934 /* NetworkOperation.m in Sources */,
+				ECA173B31ECDAEA60083545B /* BackendConfiguration.m in Sources */,
+				ECF458491ECEFE9900FEF934 /* ServiceOperation.m in Sources */,
 				ECA173831ECDAE810083545B /* AppDelegate.m in Sources */,
+				ECA173BF1ECE88A60083545B /* NetworkService.m in Sources */,
 				ECA173801ECDAE810083545B /* main.m in Sources */,
+				ECA94D951ECF10D6008E9962 /* ResponseMapper.m in Sources */,
+				ECF4582D1ECEDEF300FEF934 /* BackendService.m in Sources */,
+				ECA94D8E1ECF0778008E9962 /* NetworkQueue.m in Sources */,
+				ECB089261ED065E100A7D93C /* SignInItem.m in Sources */,
+				ECA94D911ECF1096008E9962 /* SignInResponseMapper.m in Sources */,
+				ECA173D91ECEA1FF0083545B /* UserItem.m in Sources */,
+				ECF458431ECEF22600FEF934 /* BackendAuth.m in Sources */,
+				ECB089291ED06CAE00A7D93C /* ArrayResponseMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +678,7 @@
 				ECA173AA1ECDAE810083545B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECA173AB1ECDAE810083545B /* Build configuration list for PBXNativeTarget "OCNetworkLayerTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +687,7 @@
 				ECA173AD1ECDAE810083545B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECA173AE1ECDAE810083545B /* Build configuration list for PBXNativeTarget "OCNetworkLayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +696,7 @@
 				ECA173B01ECDAE810083545B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
