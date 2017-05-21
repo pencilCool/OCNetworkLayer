@@ -27,6 +27,10 @@
 		ECA94D951ECF10D6008E9962 /* ResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA94D941ECF10D6008E9962 /* ResponseMapper.m */; };
 		ECB089261ED065E100A7D93C /* SignInItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB089251ED065E100A7D93C /* SignInItem.m */; };
 		ECB089291ED06CAE00A7D93C /* ArrayResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB089281ED06CAE00A7D93C /* ArrayResponseMapper.m */; };
+		ECB0892C1ED0AC4500A7D93C /* NetworkLayerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB0892B1ED0AC4500A7D93C /* NetworkLayerConfiguration.m */; };
+		ECB0892F1ED0AFDB00A7D93C /* SignUpOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB0892E1ED0AFDB00A7D93C /* SignUpOperation.m */; };
+		ECB089321ED0B2FC00A7D93C /* UserResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB089311ED0B2FC00A7D93C /* UserResponseMapper.m */; };
+		ECB089361ED118AF00A7D93C /* NSError+Failure.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB089351ED118AF00A7D93C /* NSError+Failure.m */; };
 		ECF4582D1ECEDEF300FEF934 /* BackendService.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF4582C1ECEDEF300FEF934 /* BackendService.m */; };
 		ECF458431ECEF22600FEF934 /* BackendAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF458421ECEF22500FEF934 /* BackendAuth.m */; };
 		ECF458461ECEF4FE00FEF934 /* NetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF458451ECEF4FE00FEF934 /* NetworkOperation.m */; };
@@ -92,6 +96,14 @@
 		ECB089251ED065E100A7D93C /* SignInItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInItem.m; sourceTree = "<group>"; };
 		ECB089271ED06CAE00A7D93C /* ArrayResponseMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayResponseMapper.h; sourceTree = "<group>"; };
 		ECB089281ED06CAE00A7D93C /* ArrayResponseMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayResponseMapper.m; sourceTree = "<group>"; };
+		ECB0892A1ED0AC4500A7D93C /* NetworkLayerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkLayerConfiguration.h; sourceTree = "<group>"; };
+		ECB0892B1ED0AC4500A7D93C /* NetworkLayerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkLayerConfiguration.m; sourceTree = "<group>"; };
+		ECB0892D1ED0AFDB00A7D93C /* SignUpOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpOperation.h; sourceTree = "<group>"; };
+		ECB0892E1ED0AFDB00A7D93C /* SignUpOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpOperation.m; sourceTree = "<group>"; };
+		ECB089301ED0B2FC00A7D93C /* UserResponseMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserResponseMapper.h; sourceTree = "<group>"; };
+		ECB089311ED0B2FC00A7D93C /* UserResponseMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserResponseMapper.m; sourceTree = "<group>"; };
+		ECB089341ED118AF00A7D93C /* NSError+Failure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Failure.h"; sourceTree = "<group>"; };
+		ECB089351ED118AF00A7D93C /* NSError+Failure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Failure.m"; sourceTree = "<group>"; };
 		ECF4582B1ECEDEF300FEF934 /* BackendService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackendService.h; sourceTree = "<group>"; };
 		ECF4582C1ECEDEF300FEF934 /* BackendService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackendService.m; sourceTree = "<group>"; };
 		ECF458411ECEF22500FEF934 /* BackendAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackendAuth.h; sourceTree = "<group>"; };
@@ -151,15 +163,17 @@
 			isa = PBXGroup;
 			children = (
 				ECA173BC1ECDB3B20083545B /* Network */,
+				ECA1737E1ECDAE810083545B /* Supporting Files */,
 				ECA173811ECDAE810083545B /* AppDelegate.h */,
 				ECA173821ECDAE810083545B /* AppDelegate.m */,
+				ECA1738A1ECDAE810083545B /* Assets.xcassets */,
+				ECA1738F1ECDAE810083545B /* Info.plist */,
+				ECA1738C1ECDAE810083545B /* LaunchScreen.storyboard */,
+				ECA173871ECDAE810083545B /* Main.storyboard */,
+				ECB0892A1ED0AC4500A7D93C /* NetworkLayerConfiguration.h */,
+				ECB0892B1ED0AC4500A7D93C /* NetworkLayerConfiguration.m */,
 				ECA173841ECDAE810083545B /* ViewController.h */,
 				ECA173851ECDAE810083545B /* ViewController.m */,
-				ECA173871ECDAE810083545B /* Main.storyboard */,
-				ECA1738A1ECDAE810083545B /* Assets.xcassets */,
-				ECA1738C1ECDAE810083545B /* LaunchScreen.storyboard */,
-				ECA1738F1ECDAE810083545B /* Info.plist */,
-				ECA1737E1ECDAE810083545B /* Supporting Files */,
 			);
 			path = OCNetworkLayer;
 			sourceTree = "<group>";
@@ -170,13 +184,14 @@
 				ECA1737F1ECDAE810083545B /* main.m */,
 			);
 			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		ECA173971ECDAE810083545B /* OCNetworkLayerTests */ = {
 			isa = PBXGroup;
 			children = (
-				ECA173981ECDAE810083545B /* OCNetworkLayerTests.m */,
 				ECA1739A1ECDAE810083545B /* Info.plist */,
+				ECA173981ECDAE810083545B /* OCNetworkLayerTests.m */,
 			);
 			path = OCNetworkLayerTests;
 			sourceTree = "<group>";
@@ -184,8 +199,8 @@
 		ECA173A21ECDAE810083545B /* OCNetworkLayerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				ECA173A31ECDAE810083545B /* OCNetworkLayerUITests.m */,
 				ECA173A51ECDAE810083545B /* Info.plist */,
+				ECA173A31ECDAE810083545B /* OCNetworkLayerUITests.m */,
 			);
 			path = OCNetworkLayerUITests;
 			sourceTree = "<group>";
@@ -193,18 +208,19 @@
 		ECA173B71ECDB3470083545B /* Backend */ = {
 			isa = PBXGroup;
 			children = (
-				ECA173B11ECDAEA60083545B /* BackendConfiguration.h */,
-				ECA173B21ECDAEA60083545B /* BackendConfiguration.m */,
 				ECA173B41ECDB0440083545B /* BackendAPIRequest.h */,
 				ECA173B51ECDB0440083545B /* BackendAPIRequest.m */,
-				ECF4582B1ECEDEF300FEF934 /* BackendService.h */,
-				ECF4582C1ECEDEF300FEF934 /* BackendService.m */,
 				ECF458411ECEF22500FEF934 /* BackendAuth.h */,
 				ECF458421ECEF22500FEF934 /* BackendAuth.m */,
+				ECA173B11ECDAEA60083545B /* BackendConfiguration.h */,
+				ECA173B21ECDAEA60083545B /* BackendConfiguration.m */,
+				ECF4582B1ECEDEF300FEF934 /* BackendService.h */,
+				ECF4582C1ECEDEF300FEF934 /* BackendService.m */,
 				ECF458471ECEFE9900FEF934 /* ServiceOperation.h */,
 				ECF458481ECEFE9900FEF934 /* ServiceOperation.m */,
 			);
 			name = Backend;
+			path = Backend;
 			sourceTree = "<group>";
 		};
 		ECA173BB1ECDB3960083545B /* Request */ = {
@@ -216,45 +232,50 @@
 				ECA173D51ECEA0D70083545B /* SignUpRequest.m */,
 			);
 			name = Request;
+			path = Request;
 			sourceTree = "<group>";
 		};
 		ECA173BC1ECDB3B20083545B /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				ECA94D8B1ECF0243008E9962 /* Operations */,
-				ECA173DA1ECEA20E0083545B /* Items */,
 				ECA173B71ECDB3470083545B /* Backend */,
-				ECA173BB1ECDB3960083545B /* Request */,
-				ECA173C01ECE88AB0083545B /* Core Network */,
 				ECA94D961ECF10DA008E9962 /* Core Mapping */,
+				ECA173C01ECE88AB0083545B /* Core Network */,
+				ECB089371ED118B300A7D93C /* Helpers */,
+				ECA173DA1ECEA20E0083545B /* Items */,
 				ECA94D921ECF109B008E9962 /* Mappers */,
+				ECA94D8B1ECF0243008E9962 /* Operations */,
+				ECA173BB1ECDB3960083545B /* Request */,
 			);
 			name = Network;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		ECA173C01ECE88AB0083545B /* Core Network */ = {
 			isa = PBXGroup;
 			children = (
-				ECA94D8C1ECF0778008E9962 /* NetworkQueue.h */,
-				ECA94D8D1ECF0778008E9962 /* NetworkQueue.m */,
 				ECF458441ECEF4FE00FEF934 /* NetworkOperation.h */,
 				ECF458451ECEF4FE00FEF934 /* NetworkOperation.m */,
+				ECA94D8C1ECF0778008E9962 /* NetworkQueue.h */,
+				ECA94D8D1ECF0778008E9962 /* NetworkQueue.m */,
 				ECA173BD1ECE88A60083545B /* NetworkService.h */,
 				ECA173BE1ECE88A60083545B /* NetworkService.m */,
 			);
 			name = "Core Network";
+			path = "Core Network";
 			sourceTree = "<group>";
 		};
 		ECA173DA1ECEA20E0083545B /* Items */ = {
 			isa = PBXGroup;
 			children = (
 				ECA173DB1ECEA2460083545B /* ParsedItem.h */,
-				ECA173D71ECEA1FF0083545B /* UserItem.h */,
-				ECA173D81ECEA1FF0083545B /* UserItem.m */,
 				ECB089241ED065E100A7D93C /* SignInItem.h */,
 				ECB089251ED065E100A7D93C /* SignInItem.m */,
+				ECA173D71ECEA1FF0083545B /* UserItem.h */,
+				ECA173D81ECEA1FF0083545B /* UserItem.m */,
 			);
 			name = Items;
+			path = Items;
 			sourceTree = "<group>";
 		};
 		ECA94D8B1ECF0243008E9962 /* Operations */ = {
@@ -262,8 +283,11 @@
 			children = (
 				ECA94D881ECF0236008E9962 /* SignInOperation.h */,
 				ECA94D891ECF0236008E9962 /* SignInOperation.m */,
+				ECB0892D1ED0AFDB00A7D93C /* SignUpOperation.h */,
+				ECB0892E1ED0AFDB00A7D93C /* SignUpOperation.m */,
 			);
 			name = Operations;
+			path = Operations;
 			sourceTree = "<group>";
 		};
 		ECA94D921ECF109B008E9962 /* Mappers */ = {
@@ -271,19 +295,33 @@
 			children = (
 				ECA94D8F1ECF1096008E9962 /* SignInResponseMapper.h */,
 				ECA94D901ECF1096008E9962 /* SignInResponseMapper.m */,
+				ECB089301ED0B2FC00A7D93C /* UserResponseMapper.h */,
+				ECB089311ED0B2FC00A7D93C /* UserResponseMapper.m */,
 			);
 			name = Mappers;
+			path = Mappers;
 			sourceTree = "<group>";
 		};
 		ECA94D961ECF10DA008E9962 /* Core Mapping */ = {
 			isa = PBXGroup;
 			children = (
-				ECA94D931ECF10D6008E9962 /* ResponseMapper.h */,
-				ECA94D941ECF10D6008E9962 /* ResponseMapper.m */,
 				ECB089271ED06CAE00A7D93C /* ArrayResponseMapper.h */,
 				ECB089281ED06CAE00A7D93C /* ArrayResponseMapper.m */,
+				ECA94D931ECF10D6008E9962 /* ResponseMapper.h */,
+				ECA94D941ECF10D6008E9962 /* ResponseMapper.m */,
 			);
 			name = "Core Mapping";
+			path = "Core Mapping";
+			sourceTree = "<group>";
+		};
+		ECB089371ED118B300A7D93C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ECB089341ED118AF00A7D93C /* NSError+Failure.h */,
+				ECB089351ED118AF00A7D93C /* NSError+Failure.m */,
+			);
+			name = Helpers;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,11 +464,14 @@
 				ECA94D8A1ECF0236008E9962 /* SignInOperation.m in Sources */,
 				ECA173D61ECEA0D70083545B /* SignUpRequest.m in Sources */,
 				ECA173BA1ECDB38A0083545B /* SignInRequest.m in Sources */,
+				ECB089361ED118AF00A7D93C /* NSError+Failure.m in Sources */,
 				ECA173861ECDAE810083545B /* ViewController.m in Sources */,
+				ECB0892C1ED0AC4500A7D93C /* NetworkLayerConfiguration.m in Sources */,
 				ECF458461ECEF4FE00FEF934 /* NetworkOperation.m in Sources */,
 				ECA173B31ECDAEA60083545B /* BackendConfiguration.m in Sources */,
 				ECF458491ECEFE9900FEF934 /* ServiceOperation.m in Sources */,
 				ECA173831ECDAE810083545B /* AppDelegate.m in Sources */,
+				ECB089321ED0B2FC00A7D93C /* UserResponseMapper.m in Sources */,
 				ECA173BF1ECE88A60083545B /* NetworkService.m in Sources */,
 				ECA173801ECDAE810083545B /* main.m in Sources */,
 				ECA94D951ECF10D6008E9962 /* ResponseMapper.m in Sources */,
@@ -441,6 +482,7 @@
 				ECA173D91ECEA1FF0083545B /* UserItem.m in Sources */,
 				ECF458431ECEF22600FEF934 /* BackendAuth.m in Sources */,
 				ECB089291ED06CAE00A7D93C /* ArrayResponseMapper.m in Sources */,
+				ECB0892F1ED0AFDB00A7D93C /* SignUpOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +524,7 @@
 				ECA173881ECDAE810083545B /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		ECA1738C1ECDAE810083545B /* LaunchScreen.storyboard */ = {
@@ -490,6 +533,7 @@
 				ECA1738D1ECDAE810083545B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

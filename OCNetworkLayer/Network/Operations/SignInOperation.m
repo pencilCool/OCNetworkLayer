@@ -8,6 +8,9 @@
 
 #import "SignInOperation.h"
 #import "SignInRequest.h"
+#import "SignInItem.h"
+#import "SignInResponseMapper.h"
+#import "NSError+Failure.h"
 @interface SignInOperation ()
 
 @property (nonatomic, strong) SignInRequest *request;
@@ -29,8 +32,22 @@
     [super start];
     [self.service requestWith:self.request success:^(id obj){
         
-    }failure:^(NSError *error){
+        @try {
+            SignInItem *item = [SignInResponseMapper process:obj];
+            if (self.sigInSuccess) {
+                self.sigInSuccess(item);
+            }
+           
+        } @catch (NSException *exception) {
+            self.sigInFailure([NSError cannotParseResponse]);
+        } @finally {
+             [self finish];
+        }
         
+        
+    }failure:^(NSError *error){
+        self.sigInFailure(error);
+        [self finish];
     }];
 }
 

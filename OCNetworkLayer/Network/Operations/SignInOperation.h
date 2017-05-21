@@ -11,8 +11,8 @@
 
 @interface SignInOperation : ServiceOperation
 
-@property (nonatomic,copy) void (^success)(SignInItem *);
-@property (nonatomic,copy) void (^failure)(NSError *);
+@property (nonatomic,copy) void (^sigInSuccess)(SignInItem *);
+@property (nonatomic,copy) void (^sigInFailure)(NSError *);
 
 - (instancetype)initWithEmail:(NSString *)email password: (NSString *)password;
 @end

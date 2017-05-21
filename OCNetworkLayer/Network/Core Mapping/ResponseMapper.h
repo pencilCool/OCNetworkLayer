@@ -10,7 +10,7 @@
 #import "ParsedItem.h"
 
 @protocol ResponseMapperProtocol
-- (id)process:(id)obj;
++ (id)process:(id)obj;
 @end
 
 //internal enum ResponseMapperError: Error {

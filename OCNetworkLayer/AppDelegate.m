@@ -7,6 +7,19 @@
 //
 
 #import "AppDelegate.h"
+#import "NetworkLayerConfiguration.h"
+#import "UserItem.h"
+#import "SignInItem.h"
+#import "SignUpOperation.h"
+#import "SignInOperation.h"
+#import "NetworkQueue.h"
+
+@interface Demo: NSObject
++ (void)performSignUp;
++ (void)performSignIn;
+@end
+
+
 
 @interface AppDelegate ()
 
@@ -16,36 +29,44 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [NetworkLayerConfiguration setup];
+    [Demo performSignUp];
     return YES;
 }
+@end
 
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+@implementation Demo
++ (void)performSignUp {
+    UserItem *user = [[UserItem alloc] initWithUniqueId:nil firstName:@"pencilCool" lastName:@"Tangyuhua" email:@"yhtangcoder@gmail.com" phoneNumber:@"12345678910"];
+    SignUpOperation *signUpop = [[SignUpOperation alloc] initWithUser:user password:@"123"];
+    signUpop.success = ^(UserItem * item) {
+        NSLog(@"item uniqueId = %@",item.uniqueId);
+    };
+    signUpop.failure = ^(NSError * error) {
+        NSLog(@"localized description :%@", error.localizedDescription);
+    };
+    [[NetworkQueue shared] addOperation:signUpop];
 }
 
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
++ (void)performSignIn {
+    SignInOperation *signInop = [[SignInOperation alloc] initWithEmail:@"yhtang_xt@163.com" password:@"123"];
+    signInop.sigInSuccess = ^(SignInItem *item) {
+        NSLog(@"token = %@",item.token);
+        NSLog(@"user id = %@",item.uniqueId);
+    };
+    
+    signInop.sigInFailure = ^(NSError *error) {
+        NSLog(@"localized description :%@", error.localizedDescription);
+    };
+    [[NetworkQueue shared] addOperation:signInop];
 }
 
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-}
 
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
 
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
 
 
 @end
